@@ -10,11 +10,11 @@
  */
 ?>
 
-				<footer id="colophon" class="row" role="contentinfo">
+				<footer id="colophon" class="col-md-12" role="contentinfo">
 
 					<?php get_sidebar( 'footer' ); ?>
 
-					<div class="site-info col-md-12">
+					<div class="site-info">
 						<?php do_action( 'meisakuki_credits' ); ?>
 						<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'meisakuki' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'meisakuki' ), 'WordPress' ); ?></a>
 					</div><!-- .site-info -->

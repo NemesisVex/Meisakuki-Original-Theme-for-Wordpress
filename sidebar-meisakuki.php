@@ -23,7 +23,7 @@
 
 					<?php get_search_form() ?>
 
-					<hr>
+					<hr />
 
 					<h3>Calendar</h3>
 
