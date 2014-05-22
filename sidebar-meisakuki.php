@@ -12,7 +12,7 @@
 
 					<nav>
 						<ul>
-							<li> <a href="/index.php/gb/contact/">Contact</a></li>
+							<li> <a href="/contact/">Contact</a></li>
 							<li> <a href="/">Gregbueno.com</a></li>
 						</ul>
 					</nav>
