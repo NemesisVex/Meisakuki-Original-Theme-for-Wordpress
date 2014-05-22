@@ -16,45 +16,36 @@
 
 get_header(); ?>
 
-<div id="main-content" class="main-content">
+					<section id="main-content" class="main-content row">
 
-<?php
-	if ( is_front_page() && meisakuki_has_featured_posts() ) {
-		// Include the featured content template.
-		get_template_part( 'featured-content' );
-	}
-?>
+					<?php
+						if ( is_front_page() && meisakuki_has_featured_posts() ) {
+							// Include the featured content template.
+							get_template_part( 'featured-content' );
+						}
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+						if ( have_posts() ) :
+							// Start the Loop.
+							while ( have_posts() ) : the_post();
 
-		<?php
-			if ( have_posts() ) :
-				// Start the Loop.
-				while ( have_posts() ) : the_post();
+								/*
+								 * Include the post format-specific template for the content. If you want to
+								 * use this in a child theme, then include a file called called content-___.php
+								 * (where ___ is the post format) and that will be used instead.
+								 */
+								get_template_part( 'content', get_post_format() );
 
-					/*
-					 * Include the post format-specific template for the content. If you want to
-					 * use this in a child theme, then include a file called called content-___.php
-					 * (where ___ is the post format) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
+							endwhile;
+							// Previous/next post navigation.
+							meisakuki_paging_nav();
 
-				endwhile;
-				// Previous/next post navigation.
-				meisakuki_paging_nav();
+						else :
+							// If no content, include the "No posts found" template.
+							get_template_part( 'content', 'none' );
 
-			else :
-				// If no content, include the "No posts found" template.
-				get_template_part( 'content', 'none' );
-
-			endif;
-		?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
-	<?php get_sidebar( 'content' ); ?>
-</div><!-- #main-content -->
+						endif;
+						?>
+					</section><!-- #main-content -->
 
 <?php
 get_sidebar( 'meisakuki' );
