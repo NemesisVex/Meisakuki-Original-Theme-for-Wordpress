@@ -50,7 +50,6 @@ get_header(); ?>
 				endif;
 			?>
 		</div><!-- #content -->
-		<?php get_sidebar( 'content' ); ?>
 	</section><!-- #primary -->
 
 <?php
