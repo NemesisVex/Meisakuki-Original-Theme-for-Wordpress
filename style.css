@@ -75,3 +75,7 @@ Text Domain: meisakuki
 .site-info {
 	margin-top: 1em;
 }
+
+.post-navigation {
+	border-top: 1px solid #253431;
+}

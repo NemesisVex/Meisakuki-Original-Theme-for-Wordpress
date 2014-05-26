@@ -16,7 +16,7 @@
 
 get_header(); ?>
 
-					<section id="main-content" class="main-content row">
+					<section id="main-content" class="main-content">
 
 					<?php
 						if ( is_front_page() && meisakuki_has_featured_posts() ) {
