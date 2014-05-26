@@ -21,4 +21,9 @@
 						<?php dynamic_sidebar( 'sidebar-1' ); ?>
 					</div><!-- #primary-sidebar -->
 					<?php endif; ?>
+					
+					<?php 
+						get_sidebar( 'content' );
+						get_sidebar();
+					?>
 				</aside><!-- #secondary -->

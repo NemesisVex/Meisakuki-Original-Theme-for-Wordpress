@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-					<section id="main-content" class="main-content row">
+					<section id="main-content" class="main-content">
 					<?php
 						// Start the Loop.
 						while ( have_posts() ) : the_post();
