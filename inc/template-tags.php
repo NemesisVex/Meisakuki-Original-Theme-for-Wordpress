@@ -52,12 +52,14 @@ function meisakuki_paging_nav() {
 	if ( $links ) :
 
 	?>
-	<nav class="navigation paging-navigation col-md-12" role="navigation">
-		<h4 class="screen-reader-text sr-only"><?php _e( 'Posts navigation', 'meisakuki' ); ?></h4>
-		<p class="loop-pagination centered">
-			<?php echo $links; ?>
-		</p><!-- .pagination -->
-	</nav><!-- .navigation -->
+	<div class="row">
+		<nav class="navigation paging-navigation col-md-12" role="navigation">
+			<h4 class="screen-reader-text sr-only"><?php _e( 'Posts navigation', 'meisakuki' ); ?></h4>
+			<p class="loop-pagination centered">
+				<?php echo $links; ?>
+			</p><!-- .pagination -->
+		</nav><!-- .navigation -->
+	</div>
 	<?php
 	endif;
 }
