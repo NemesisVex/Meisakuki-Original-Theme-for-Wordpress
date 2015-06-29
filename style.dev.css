@@ -1,0 +1,19 @@
+/*
+Theme Name: Meisakuki
+Author: Greg Bueno
+Author URI: http://gregbueno.com/wp/meisakuki/
+Description: A WordPress theme customized for Meisakuki.
+Template: vexvox
+Version: 2.0
+Text Domain: meisakuki
+*/
+@import url(../vexvox/style.css);
+/* 
+    Created on : Apr 30, 2014, 8:00:07 AM
+    Author     : gregbueno
+*/
+#masthead {
+  background-color: #D9DCFF;
+  border-bottom: 3px double #606159; }
+
+/*# sourceMappingURL=style.dev.css.map */
