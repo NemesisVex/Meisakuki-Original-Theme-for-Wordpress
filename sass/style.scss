@@ -7,5 +7,7 @@ Template: vexvox
 Version: 2.0
 Text Domain: meisakuki
 */
-@import url(../vexvox/style.css);#masthead{background-color:#D9DCFF;border-bottom:3px double #606159}
-/*# sourceMappingURL=style.css.map */
+
+@import "../vexvox/style.css";
+@import "variables.scss";
+@import "layout.scss";
